@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Conta Bancária</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="caixaLOGO.png" alt="">
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <button onclick="setOperation('saque')">Saque</button>
+                <button onclick="setOperation('deposito')">Depósito</button>
+                <button onclick="confirmarOperacao()">Confirmar</button>
+            </div>
+            <div class="center">
+                <input type="text" id="valueInput" placeholder="Valor" />
+                <div id="output">Saldo inicial: R$ 100.00</div>
+            </div>
+            <div class="right">
+                <button onclick="visualizar()">Visualizar</button>
+                <button onclick="sair()">Sair</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
